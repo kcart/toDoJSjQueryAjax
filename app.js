@@ -43,7 +43,7 @@ $('#add-form').on('submit', function(event) {
 	var itemId = item.attr('data-id')
 	var updateRequest = $.ajax({
 	  type: 'PUT',
-	  url: "https://listalous.herokuapp.com/lists/YOUR-LIST-NAME-HERE/items/" + itemId,
+	  url: "https://listalous.herokuapp.com/lists/DAISY-PI-MAGIC/items/" + itemId,
 	  data: { completed: !isItemCompleted }
 })
 	updateRequest.done(function(itemData) {
